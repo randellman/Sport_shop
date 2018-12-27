@@ -1,0 +1,16 @@
+.logo{
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+    justify-content: space-around;
+	flex-basis: 10.55%;
+	padding: 0 10px;
+	color: rgb(245, 245, 245);
+	text-transform: uppercase;	
+	font:{
+		family: 'Poppins', sans-serif;
+		size: 33px;
+		weight: 900;
+
+	}		
+}

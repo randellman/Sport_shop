@@ -1,0 +1,13 @@
+.side-button{
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-basis: 4.16666%;
+	padding: 0 10px;
+	border: none;
+	cursor: pointer;
+	background-color: rgba(33, 33, 33, 0);
+}
+
+@import "__icon/side-button__icon";

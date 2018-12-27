@@ -1,0 +1,10 @@
+.social{
+	position: relative;
+	display: inline-flex;
+	flex-basis: 16.444%;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+@import "social__item";
+@import "__item-link/social__item-link";

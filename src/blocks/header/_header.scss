@@ -1,0 +1,21 @@
+.top-section{
+ 	background:{
+ 		image: url(../../img/top-section_bg.png);
+ 		repeat: no-repeat;
+ 		position: center;
+ 		size: cover;
+ 		} 
+	height: 906px;
+}
+
+.header{
+	display: flex;
+	align-items: stretch;
+	padding: 22px 0;
+	text-align: center;
+	background-color: rgba(33,33,33,0.75);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+}	
+
+@import "_vertical-line/vertical-line";
+
