@@ -4,14 +4,14 @@
 	flex-basis: 60.4%;
 	align-items: center;
 	justify-content: flex-start;
+	&-list{
+		display: inline-flex;
+		flex-basis: 52.27%;
+		justify-content: space-evenly;
+
+	}
 }
 
-.nav-list{
-	display: inline-flex;
-	flex-basis: 52.27%;
-	justify-content: space-evenly;
-
-}
 
 @import "nav__item";
 @import "nav__item-link";
