@@ -4,7 +4,7 @@
 	justify-content: center;
 	flex-basis: 10.5%;
 
-	&__text{
+	&__text {
 		color: $logo-color;
 		text-transform: uppercase;	
 		font: {
@@ -17,6 +17,6 @@
 
 @media only screen and (min-width: 992px) {
 	.logo { 
-		border-right: 1px solid $header-borders-color;
+		border-right: 1px solid $border-color-grey;
 	}
 } 

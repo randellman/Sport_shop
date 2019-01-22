@@ -1,18 +1,4 @@
-$header-borders-color: rgba(255, 255, 255, .22);
-$header-height: 76px;
-
-@mixin header-vertical-string {
-	&::after{
-		display: inline-block;
-		position: absolute;
-		top: 0;
-		right: 0;
-		content: '';
-		width: 1px;
-		min-height: $header-height;
-		background-color: $header-borders-color;
-	}
-} 
+$header-height: 76px; 
 
 .header {
 	display: flex;
@@ -20,11 +6,11 @@ $header-height: 76px;
 	min-height: $header-height;
 	text-align: center;
 	background-color: rgba(33, 33, 33, 0.75);
-	border-bottom: 1px solid $header-borders-color;
+	border-bottom: 1px solid $border-color-grey;
 }
 
 @media only screen and (max-width: 992px) {
-	.header__item{
+	.header__item {
 		padding: 10px;
 	}
 }		
@@ -34,7 +20,7 @@ $header-height: 76px;
 		flex-direction: row;
 		align-items: stretch;
 
-		&__item{
+		&__item {
 			padding: 0 10px;
 		}
 	}

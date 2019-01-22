@@ -7,7 +7,7 @@
 	display: flex;
 	flex-basis: 16.5%;
 
- 	&__list{
+ 	&__list {
  		display: flex;
  		justify-content: space-evenly;
  		flex-basis: 100%;
@@ -29,9 +29,9 @@
 
 @media only screen and (min-width: 992px) {
 	.social {
-		border-right: 1px solid $header-borders-color;
+		border-right: 1px solid $border-color-grey;
 
-		&__list{
+		&__list {
 			align-items: center;
 		}
 	}		
