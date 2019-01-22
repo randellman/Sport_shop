@@ -1,13 +1,41 @@
-.side-button{
-	position: relative;
+@import "_icon-types/side-button__icon_sidebar";
+@import "_icon-types/side-button__icon_basket";
+@import "_icon-types/side-button__icon_search";
+
+.side-button {
 	display: inline-flex;
-	align-items: center;
 	justify-content: space-around;
-	flex-basis: 4.16666%;
-	padding: 0 10px;
 	border: none;
 	cursor: pointer;
-	background-color: rgba(33, 33, 33, 0);
+	background: {
+		repeat: no-repeat;
+		position: center;
+		size: cover;
+	}
+
+	&__icon {
+		display: inline-block;
+	}
+
+	&_burger_left {
+		align-self: flex-start;		
+	}
 }
 
-@import "__icon/side-button__icon";
+@media only screen and (min-width: 992px) {
+	.side-button {
+		align-items: center;
+		align-self: unset;
+		&:not(:last-child){
+			border-right: 1px solid $header-borders-color;
+		}
+
+		&_burger_width {
+			flex-basis: 4%;
+		}
+
+		&_right-btn_width{
+			flex-basis: 50%;
+		}
+	}
+} 

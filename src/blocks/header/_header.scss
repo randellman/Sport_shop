@@ -1,21 +1,41 @@
-.top-section{
- 	background:{
- 		image: url(../../img/top-section_bg.png);
- 		repeat: no-repeat;
- 		position: center;
- 		size: cover;
- 		} 
-	height: 906px;
+$header-borders-color: rgba(255, 255, 255, .22);
+$header-height: 76px;
+
+@mixin header-vertical-string {
+	&::after{
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		content: '';
+		width: 1px;
+		min-height: $header-height;
+		background-color: $header-borders-color;
+	}
+} 
+
+.header {
+	display: flex;
+	flex-direction: column;
+	min-height: $header-height;
+	text-align: center;
+	background-color: rgba(33, 33, 33, 0.75);
+	border-bottom: 1px solid $header-borders-color;
 }
 
-.header{
-	display: flex;
-	align-items: center;
-	padding: 22px 0;
-	text-align: center;
-	background-color: rgba(33,33,33,0.75);
-	border-bottom: 1px solid rgba(255, 255, 255, 0.22);
-}	
+@media only screen and (max-width: 992px) {
+	.header__item{
+		padding: 10px;
+	}
+}		
 
-@import "_vertical-line/vertical-line";
+@media only screen and (min-width: 992px) {
+	.header {
+		flex-direction: row;
+		align-items: stretch;
 
+		&__item{
+			padding: 0 10px;
+		}
+	}
+} 

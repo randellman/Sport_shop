@@ -1,16 +1,22 @@
-.logo{
-	position: relative;
+.logo { 
 	display: inline-flex;
 	align-items: center;
-    justify-content: space-around;
-	flex-basis: 10.55%;
-	padding: 0 10px;
-	color: rgb(245, 245, 245);
-	text-transform: uppercase;	
-	font:{
-		family: 'Poppins', sans-serif;
-		size: 33px;
-		weight: 900;
+	justify-content: center;
+	flex-basis: 10.5%;
 
+	&__text{
+		color: $logo-color;
+		text-transform: uppercase;	
+		font: {
+			family: 'Poppins', sans-serif;
+			size: 33px;
+			weight: 900;
+		}
 	}		
 }
+
+@media only screen and (min-width: 992px) {
+	.logo { 
+		border-right: 1px solid $header-borders-color;
+	}
+} 
