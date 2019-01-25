@@ -1,11 +1,11 @@
-$header-height: 76px; 
+$header-height: 76px;
+$header-bg: rgba(33, 33, 33, .75); 
 
 .header {
 	display: flex;
 	flex-direction: column;
 	min-height: $header-height;
-	text-align: center;
-	background-color: rgba(33, 33, 33, 0.75);
+	background-color: $header-bg;
 	border-bottom: 1px solid $border-color-grey;
 }
 

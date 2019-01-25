@@ -1,0 +1,31 @@
+.searchbar {
+
+	&__input {
+		font: {
+			family: $main-font;
+			size: 17px;
+			weight: 600;
+		} 
+		border-radius: 15px;
+		line-height: 25px;
+	}
+
+	&_hidden {
+		width: 0;
+		border: none;
+		transition: width 0.4s linear;
+	}
+
+	&_active {
+		width: 300px;
+   		border: 2px solid $border-color-grey;
+    	padding: 0 10px;
+    	transition: width 0.4s linear;	
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	.searchbar_active {
+	    width: 200px;		
+	}
+}

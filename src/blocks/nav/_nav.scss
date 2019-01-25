@@ -1,5 +1,6 @@
 .nav {
-
+	display: block;
+	flex-basis: 45%;
 	&__list {
 		display: none;
 		margin: 0;
@@ -59,7 +60,7 @@
 
 	.nav {
 		display: flex;
-		flex-basis: 61%;
+		flex-basis: 80%;
 		border-right: 1px solid $border-color-grey;
 
 		&__list {
@@ -68,11 +69,15 @@
 			align-items: center;
 			justify-content: space-evenly; 
 		}
+
+		&__item{
+			padding: 0 5px;
+		}
 	}
 } 
 
 @media only screen and (min-width: 1200px) {
 	.nav__list {
-		flex-basis: 70%;
+		flex-basis: 65%;
 	}
 }

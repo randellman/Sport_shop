@@ -6,69 +6,84 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	</head>
 	<body>
-		<!--____________________ Top-Section block____________________ -->
 		<div id="page-wrap" class="page-wrap">
-			<div class="top-section top-section_bg">
+			<div class="top-section">
 				<header class="header">
+
 					<nav id="sidebar" class="sidebar">
 					   <ul class="sidebar-list">
 					      <li class="sidebar-list_item"><a class="sidebar-list_link" href="#">Home</a></li>
 					      <li class="sidebar-list_item"><a class="sidebar-list_link" href="#">About us</a></li>
 					      <li class="sidebar-list_item"><a class="sidebar-list_link" href="#">Contact</a></li>
 					   </ul>
-					</nav>				
-					<a id="side-button" class="side-button side-button_burger_left side-button_burger_width header__item" href="#sidebar">
-						<span class="side-button__icon side-button__icon_sidebar"></span>
-					</a>
-					<span class="logo header__item">
-						<span class="logo__text">portpro</span>
-					</span>
-					<nav id="nav" class="nav header__item">
-						<ul id="nav__list" class="nav__list">
-							<li class="nav__item">
-								<a class="nav__item-link" href="#" title="">men</a>
-							</li>
-							<li class="nav__item">
-								<a class="nav__item-link" href="#" title="">women</a>
-							</li>
-							<li class="nav__item">
-								<a class="nav__item-link" href="#" title="">kids</a>
-							</li>
-							<li class="nav__item">
-								<a class="nav__item-link" href="#" title="">sports</a>
-							</li>
-							<li class="nav__item">
-								<a class="nav__item-link" href="#" title="">brands</a>
-							</li>
-							<li class="nav__item">
-								<a class="nav__item-link" href="#" title="">customize</a>
-							</li>
-						</ul>		
-					</nav>						
-					<nav id="social" class="social header__item">
-						<ul id="social__list" class="social__list">
-							<li class="social__item">
-								<a class="social__item-link social__item-link_facebook" href="#" title=""></a>
-							</li>
-							<li class="social__item">
-								<a class="social__item-link social__item-link_twitter" href="#" title=""></a>
-							</li>
-							<li class="social__item">
-								<a class="social__item-link social__item-link_google-plus" href="#" title=""></a>
-							</li>
-							<li class="social__item">
-								<a class="social__item-link social__item-link_instagram" href="#" title=""></a>
-							</li>
-						</ul>
 					</nav>
-					<div class="btn-group">
-						<a class="side-button side-button_right-btn_width header__item">
-							<span class="side-button__icon side-button__icon_basket"></span>
+
+						<a id="side-button" class="side-button side-button_burger_left side-button_burger_width header__item" href="#sidebar">
+							<span class="side-button__icon side-button__icon_sidebar"></span>
 						</a>
-						<a class="side-button side-button_right-btn_width header__item">
-							<span class="side-button__icon side-button__icon_search"></span>
-						</a>
+
+						<span class="logo header__item">
+							<span class="logo__text">portpro</span>
+						</span>
+					
+					<div class="nav-group">
+						<!--_______________________Nav____________________ -->
+						<nav id="nav" class="nav header__item">
+							<ul id="nav__list" class="nav__list">
+								<li class="nav__item">
+									<a class="nav__item-link" href="#" title="">men</a>
+								</li>
+								<li class="nav__item">
+									<a class="nav__item-link" href="#" title="">women</a>
+								</li>
+								<li class="nav__item">
+									<a class="nav__item-link" href="#" title="">kids</a>
+								</li>
+								<li class="nav__item">
+									<a class="nav__item-link" href="#" title="">sports</a>
+								</li>
+								<li class="nav__item">
+									<a class="nav__item-link" href="#" title="">brands</a>
+								</li>
+								<li class="nav__item">
+									<a class="nav__item-link" href="#" title="">customize</a>
+								</li>
+							</ul>		
+						</nav>
+						<!--____________________Nav-End_____________________ -->
+						<!--____________________Social______________________ -->
+						<nav id="social" class="social header__item">
+							<ul id="social__list" class="social__list">
+								<li class="social__item">
+									<a class="social__item-link social__item-link_facebook" href="https://www.facebook.com" title=""></a>
+								</li>
+								<li class="social__item">
+									<a class="social__item-link social__item-link_twitter" href="https://twitter.com" title=""></a>
+								</li>
+								<li class="social__item">
+									<a class="social__item-link social__item-link_google-plus" href="https://plus.google.com" title=""></a>
+								</li>
+								<li class="social__item">
+									<a class="social__item-link social__item-link_instagram" href="https://www.instagram.com" title=""></a>
+								</li>
+							</ul>
+						</nav>
+						<!--_____________________Social-End_____________________ -->
 					</div>
+					
+					<div class="btn-group">
+						<a id="shop-bag" class="side-button side-button_right-btn_width header__item">
+							<span class="side-button__icon side-button__icon_basket glyphicon my-cart-icon">
+								<span class="badge badge-notify my-cart-badge"></span>
+							</span>
+						</a>
+						<form id="searchbar" class="searchbar side-button side-button_right-btn_width header__item">
+							<input id="search-input" class="searchbar__input searchbar_hidden" type="text" name="" placeholder="Search...">
+							<a id="search-link" class="searchbar__link">
+								<span class="side-button__icon side-button__icon_search"></span>
+							</a>							
+						</form>
+					</div>			
 				</header>		
 			</div>
 		</div>
