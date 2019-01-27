@@ -21,13 +21,10 @@
 	}
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 768px) {
 	.side-button {
 		align-items: center;
 		justify-content: space-around;
-		&:not(:last-child) {
-			border-right: 1px solid $border-color-grey;
-		}
 
 		&_burger_left {
 			align-self: unset;		

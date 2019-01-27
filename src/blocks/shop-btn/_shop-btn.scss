@@ -1,0 +1,14 @@
+$shop-btn-color-blue: #3954d9;
+$shop-btn-color-turquoise: #65cbff;
+
+.shop-btn {
+	display: inline-block;
+	color: white;
+	font-size: 17px;
+	font-weight: 500;
+	text-transform: uppercase;
+	line-height: 22px;
+	background-color: $shop-btn-color-blue;
+	border-radius: 22px;
+	padding: 14px 28px;
+}

@@ -1,0 +1,58 @@
+.top-section {
+	display: block;
+	min-height: 1020px;
+	position: relative;
+ 	background: {
+ 		image: url("../../img/top-section_bg.png");
+ 		repeat: no-repeat;
+ 		position: center;
+ 		size: cover;
+ 	}
+
+ 	&__title {
+ 		color: white;
+		font-family: "Poppins";
+		font-weight: 700;
+		line-height: 60px;
+		text-transform: uppercase;
+		letter-spacing: -13px;
+ 	}
+
+ 	&__text {
+ 		padding: 20px 0; 
+ 		color: white;
+		font-size: 15px;
+		font-weight: 700;
+	    letter-spacing: 8px;
+    	text-transform: uppercase;
+ 	}
+
+ 	&__item {
+		margin-top: 30px !important;
+	}
+} 
+
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+	.top-section {
+
+		&__title {
+			font-size: 150px;
+    		line-height: 120px;
+		}
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	.top-section {
+
+		&__title {
+			font-size: 204px;
+			line-height: 150px;
+		}
+
+		&__text {
+			font-size: 21px;
+		}
+	}
+}

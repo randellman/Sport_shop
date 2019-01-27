@@ -1,3 +1,5 @@
+$logo-color: rgb(245, 245, 245);
+
 .logo { 
 	display: flex;
 	justify-content: center;
@@ -6,18 +8,17 @@
 		color: $logo-color;
 		text-transform: uppercase;	
 		font: {
-			family: 'Poppins', sans-serif;
+			family: "Poppins", sans-serif;
 			size: 33px;
 			weight: 900;
 		}
 	}		
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 768px) {
 	.logo {
 		flex-basis: 10.5%;
 		align-items: center;
 		justify-content: center; 
-		border-right: 1px solid $border-color-grey;
 	}
 } 

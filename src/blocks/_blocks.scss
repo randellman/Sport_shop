@@ -1,8 +1,12 @@
 @import "variables";
 @import "mixins";
+@import "top-section/top-section"; 
 @import "header/header";
 @import "side-button/side-button";
 @import "logo/logo";
 @import "nav/nav";
 @import "social/social";
-@import "searchbar/searchbar"; 
+@import "searchbar/searchbar";
+@import "shop-btn/shop-btn";
+@import "main/main";
+@import "shipping/shipping"; 

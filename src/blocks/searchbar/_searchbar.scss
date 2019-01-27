@@ -18,13 +18,13 @@
 
 	&_active {
 		width: 300px;
-   		border: 2px solid $border-color-grey;
+   		border: $header-border;
     	padding: 0 10px;
     	transition: width 0.4s linear;	
 	}
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 768px) {
 	.searchbar_active {
 	    width: 200px;		
 	}
