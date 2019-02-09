@@ -1,6 +1,8 @@
 const path = require("path");
 const webpack = require("webpack");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
+const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
+const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const ImageminPlugin = require("imagemin-webpack");
 const imageminGifsicle = require("imagemin-gifsicle");
@@ -9,10 +11,15 @@ const imageminOptipng = require("imagemin-optipng");
 const imageminSvgo = require("imagemin-svgo");
 
 module.exports = {
-  resolve: {
-    alias: {
-/*      sideBar: path.resolve(__dirname, "src/libs/sideBarMmenu/"),   */
-    }
+    optimization: {
+    minimizer: [
+      new UglifyJsPlugin({
+        cache: true,
+        parallel: true,
+        sourceMap: true
+      }),
+      new OptimizeCSSAssetsPlugin({})
+    ]
   },
 
   module: {
@@ -45,12 +52,11 @@ module.exports = {
       },
 
       {
-        test: /\.(sass|scss)$/,
+        test: /\.(sa|sc|c)ss$/,
         use: [      
           {
             loader: MiniCssExtractPlugin.loader,           
-          },
-          
+          },      
           {
             loader: "css-loader",
               options:{

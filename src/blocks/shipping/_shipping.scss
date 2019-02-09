@@ -1,8 +1,13 @@
 $shipping-icon-color: #5b5b5b;
 
 .shipping {
-	padding: 80px 50px 60px;
-	border-bottom: $blocks-border;
+	display: flex;
+	flex-flow: row wrap;
+
+	&__item {
+		padding: 80px 45px 60px;
+		border-bottom: $blocks-border;		
+	}
 
 	&__icon {
 		display: inline-block;
@@ -40,7 +45,7 @@ $shipping-icon-color: #5b5b5b;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
-	.shipping {
+	.shipping__item {
 		flex-basis: 50%;
 		&:nth-child(odd) {
 			border-right: $blocks-border;
@@ -49,7 +54,7 @@ $shipping-icon-color: #5b5b5b;
 }
 
 @media only screen and (min-width: 1200px) {
-	.shipping {
+	.shipping__item {
 		flex-basis: 25%;
 		&:not(:last-child) {
 			border-right: $blocks-border;

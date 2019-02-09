@@ -1,6 +1,4 @@
 .top-section {
-	display: block;
-	min-height: 1020px;
 	position: relative;
  	background: {
  		image: url("../../img/top-section_bg.png");
@@ -15,7 +13,6 @@
 		font-weight: 700;
 		line-height: 60px;
 		text-transform: uppercase;
-		letter-spacing: -13px;
  	}
 
  	&__text {
@@ -27,13 +24,22 @@
     	text-transform: uppercase;
  	}
 
- 	&__item {
-		margin-top: 30px !important;
+ 	&__item-wrapper {
+		margin-top: 75px;
 	}
 } 
 
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+	.top-section {
 
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+		&__item-wrapper {
+			margin-top: 120px;
+		}
+	}
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
 	.top-section {
 
 		&__title {
@@ -49,10 +55,47 @@
 		&__title {
 			font-size: 204px;
 			line-height: 150px;
+			letter-spacing: -13px;
 		}
 
 		&__text {
 			font-size: 21px;
+		}
+	}
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1449px) {
+	.top-section {
+
+		&__item-wrapper {
+			margin-top: 160px;
+		}
+	}
+}
+
+
+@media only screen and (min-width: 1450px) {
+	.top-section {
+		min-height: 1020px;
+
+		&__item-wrapper {
+			display: flex;
+		}
+	}
+}
+
+@media only screen and (max-width: 1450px) {
+	.top-section {
+		padding-bottom: 150px;
+	}	
+}
+
+@media (min-width: 1700px) {
+	.top-section {
+
+		&__item-wrapper {
+			display: flex;
+			margin-left: 100px;
 		}
 	}
 }

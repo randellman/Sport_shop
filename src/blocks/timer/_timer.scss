@@ -1,0 +1,55 @@
+.timer {
+	display: flex;
+	justify-content: center;
+	color: #2d2b27;
+
+	&__item {
+		background-color: white;
+		border-radius: 20px;
+		font-size: 38px;
+		font-weight: 700;
+		line-height: 32px;
+		text-transform: uppercase;
+
+		&:not(:last-child) {
+			margin-right: 20px;
+		}
+	}
+
+	&__dots {
+		display: block;
+		color: #121212;
+		font-size: 15px;
+		font-weight: 400;
+		line-height: 16px;
+	}
+
+	&__text {
+		display: block;
+		padding-top: 10px;
+		font-size: 11px;
+		font-weight: 600;
+		text-transform: uppercase;
+		color: #2d2b27;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.timer {
+
+		&__item {
+			padding: 15px 12px;
+			width: 75px;
+		}
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.timer {
+
+		&__item {
+			padding: 22px 0px;
+			width: 90px;
+		}
+	}
+}

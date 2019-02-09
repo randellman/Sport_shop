@@ -1,6 +1,6 @@
-@import "_icon-types/side-button__icon_sidebar";
-@import "_icon-types/side-button__icon_basket";
-@import "_icon-types/side-button__icon_search";
+@import "_icon-types/side-button_sidebar";
+@import "_icon-types/side-button_basket";
+@import "_icon-types/side-button_search";
 
 .side-button {
 	display: inline-flex;
@@ -11,31 +11,11 @@
 		position: center;
 		size: cover;
 	}
-
-	&__icon {
-		display: inline-block;
-	}
-
-	&_burger_left {
-		align-self: flex-start;		
-	}
 }
 
 @media only screen and (min-width: 768px) {
 	.side-button {
 		align-items: center;
 		justify-content: space-around;
-
-		&_burger_left {
-			align-self: unset;		
-		}
-
-		&_burger_width {
-			flex-basis: 4%;
-		}
-		
-		&_right-btn_width {
-			flex-basis: 50%;
-		}
 	}
 } 

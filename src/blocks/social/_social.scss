@@ -5,31 +5,17 @@
 
 .social {
 	display: flex;
-	flex-basis: 45%;
-
- 	&__list {
- 		display: flex;
- 		align-items: center;
- 		justify-content: space-evenly;
- 		flex-basis: 100%;
- 	}
+	align-items: center;
+	justify-content: space-evenly;
+	flex-basis: 100%;
 
 	&__item {
-		padding: 0 5px;
-	}
-
-	&__item-link {
+		margin: 0 5px;
 		display:inline-block;
 		background:{
 			repeat: no-repeat;
 			position: center;
 			size: cover;
 		}	
-	}
-}	 
-
-@media only screen and (min-width: 768px) {
-	.social {
-		flex-basis: 20%;
-	}		
+	}	 
 }

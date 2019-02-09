@@ -1,0 +1,84 @@
+.model {
+
+	&__name {
+		padding-bottom: 15px;
+		color: $model-name-color;
+		font-family: "Oswald";
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+
+	&__price {
+		font-weight: 600;
+		
+		&_new {
+			padding-right: 10px;
+			color: $model-new-price-color;
+			font-size: 15px;
+		}
+
+		&_old {
+			color: $model-old-price-color;
+			font-size: 12px;
+			text-decoration: line-through;
+		}
+	}
+	&__img {
+		margin-bottom: 40px;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.model {
+
+		&__img {
+			min-height: 225px;
+		}
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+	.model {
+		text-align: left;
+
+		&__text {
+			padding-left: 25px;
+		}
+	}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.model {
+
+		&__img {
+			min-height: 295px;
+		}
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.model {
+
+		&__img {
+			min-height: 170px;
+		}
+	}
+}
+
+@media (min-width: 1700px) {
+	.model {
+		text-align: left;
+
+		&__text {
+			padding-left: 25px;
+		}
+
+		&__name {
+			padding-bottom: 15px;
+		}
+
+		&__img {
+			min-height: 246px;
+		}
+	}
+}

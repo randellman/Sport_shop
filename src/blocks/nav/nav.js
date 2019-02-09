@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	$(function() {
-		$("#nav__list").slicknav({
-			prependTo: $("#nav"),
+		$("#nav").slicknav({
+			prependTo: $("#nav-wrapper"),
 			duration: 900,
 			easingOpen: "easeOutBounce",
 		});

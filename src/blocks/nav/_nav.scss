@@ -1,12 +1,8 @@
 .nav {
-	display: block;
-	flex-basis: 45%;
-	&__list {
-		display: none;
-		margin: 0;
-	}
+	display: none;
+	margin: 0;
 
-	&__item-link {
+	&__item {
 		color: white;
 		font-weight: 600;
 		text-transform: uppercase;
@@ -20,6 +16,7 @@
 		flex-direction: column;
 		background-color: inherit;
 		padding: 0;
+		width: 100%;
 	}
 
 	&_btn {
@@ -35,16 +32,14 @@
 	}
 
 	&_icon {
-		display: none;
+		
 	}
 
 	&_nav {
 		background-color: $header-bg;
 		border-radius: 10px;
-		ul {
+		.nav__item {
 			margin: 0;
-		}
-		a {
 			padding: 10px 15px;
 			&:hover {
 				background-color: #fff;
@@ -55,14 +50,14 @@
 
 @media only screen and (min-width: 768px) {
 	.nav {
-		display: flex;
-		flex-basis: 80%;
-		justify-content: center;
-    	align-items: center;
-    	position: relative;
+		display: none;
 	}
 
 	.slicknav {
+
+		&_menu {
+			justify-content: center;
+		}
 
 		&_nav {
 			position: absolute;
@@ -80,13 +75,10 @@
 	}
 
 	.nav {
-
-		&__list {
-	 		display: inline-flex;
-			flex-basis: 100%;
-			align-items: center;
-			justify-content: space-evenly; 
-		}
+		display: inline-flex;
+		flex-basis: 100%;
+		align-items: center;
+		justify-content: space-evenly; 
 
 		&__item {
 			padding: 0 5px;
@@ -96,10 +88,6 @@
 
 @media only screen and (min-width: 1200px) {
 	.nav {
-		justify-content: flex-start;
-
-		&__list {
-			flex-basis: 65%;
-		}	
+		flex-basis: 65%;	
 	}
 }

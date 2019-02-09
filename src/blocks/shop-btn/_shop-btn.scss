@@ -4,11 +4,23 @@ $shop-btn-color-turquoise: #65cbff;
 .shop-btn {
 	display: inline-block;
 	color: white;
-	font-size: 17px;
 	font-weight: 500;
 	text-transform: uppercase;
-	line-height: 22px;
 	background-color: $shop-btn-color-blue;
 	border-radius: 22px;
-	padding: 14px 28px;
+
+	&_big {
+		padding: 15px 28px;
+		font-size: 17px;
+
+	}
+
+	&_small {
+		padding: 15px 23px;
+		font-size: 13px;
+	}
+
+	&_maya_blue {
+		background-color: #65cbff;
+	}
 }

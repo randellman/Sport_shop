@@ -1,0 +1,38 @@
+$offer-new-price-color: #3954d9;
+$offer-old-price-color: #121212;
+
+.price {
+
+	&__new {
+		
+		&_size-big {
+			display: block;		
+			color: $offer-new-price-color;
+			font-size: 52px;
+			font-weight: 700;
+		}
+	}
+
+	&__old {
+		text-decoration: line-through;
+
+		&_size-small {
+			color: $offer-old-price-color;
+			font-size: 33px;
+			font-weight: 500;
+		}		
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.price {
+
+		&__new {
+			display: inline-block;
+
+			&_size-big {
+				margin-right: 50px;
+			}
+		}
+	}
+}

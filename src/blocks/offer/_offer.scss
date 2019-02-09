@@ -1,0 +1,55 @@
+.offer {
+	
+	&__term {
+		color: #616161;
+		font-family: "Poppins";
+		font-size: 20px;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+
+	&__title {
+		padding: 35px 0 50px;
+		color: #0d2e57;
+		font-family: "Oswald";
+		font-size: 43px;
+		font-weight: 400;
+		line-height: 44px;
+		text-transform: uppercase;
+	}
+
+	&__text {
+		color: #8a8a8a;
+		font-size: 18px;
+		font-weight: 300;
+		line-height: 30px;
+	}
+
+	&__price {
+		padding: 55px 0;
+	}
+
+	&__timer {
+		padding-bottom: 45px;
+	}
+}
+
+@media only screen and (max-width: 1699px) {
+	.offer {
+
+		&__text {
+			padding-bottom: 55px;
+		}				
+	}
+}
+
+
+@media only screen and (min-width: 1700px) {
+	.offer {
+
+		&__price {
+			padding: 55px 0;			
+		}
+	}	
+
+}

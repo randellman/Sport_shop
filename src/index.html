@@ -7,10 +7,8 @@
 	</head>
 	<body>
 		<div id="page-wrap" class="page-wrap">
-
 			<div class="top-section">
 				<header class="header">
-					<!--_____________________ Sidebar______________________ -->
 					<nav id="sidebar" class="sidebar">
 					   <ul class="sidebar-list">
 					      <li class="sidebar-list_item"><a class="sidebar-list_link" href="#">Home</a></li>
@@ -18,136 +16,298 @@
 					      <li class="sidebar-list_item"><a class="sidebar-list_link" href="#">Contact</a></li>
 					   </ul>
 					</nav>
-
-					<a id="side-button" class="side-button side-button_burger_left side-button_burger_width header__item" href="#sidebar">
-							<span class="side-button__icon side-button__icon_sidebar"></span>
-						</a>
-					<!--_____________________ Sidebar-End______________________ -->		
-					<h4 class="logo header__item">
-						<span class="logo__text">portpro</span>
-					</h4>
-					
-					<div class="nav-group">
-						<!--_______________________Nav____________________ -->
-						<nav id="nav" class="nav header__item">
-							<ul id="nav__list" class="nav__list">
-								<li class="nav__item">
-									<a class="nav__item-link" href="#" title="">men</a>
-								</li>
-								<li class="nav__item">
-									<a class="nav__item-link" href="#" title="">women</a>
-								</li>
-								<li class="nav__item">
-									<a class="nav__item-link" href="#" title="">kids</a>
-								</li>
-								<li class="nav__item">
-									<a class="nav__item-link" href="#" title="">sports</a>
-								</li>
-								<li class="nav__item">
-									<a class="nav__item-link" href="#" title="">brands</a>
-								</li>
-								<li class="nav__item">
-									<a class="nav__item-link" href="#" title="">customize</a>
-								</li>
-							</ul>		
-						</nav>
-						<!--____________________Nav-End_____________________ -->
-						<!--____________________Social______________________ -->
-						<nav id="social" class="social header__item">
-							<ul id="social__list" class="social__list">
-								<li class="social__item">
-									<a class="social__item-link social__item-link_facebook" href="https://www.facebook.com" title=""></a>
-								</li>
-								<li class="social__item">
-									<a class="social__item-link social__item-link_twitter" href="https://twitter.com" title=""></a>
-								</li>
-								<li class="social__item">
-									<a class="social__item-link social__item-link_google-plus" href="https://plus.google.com" title=""></a>
-								</li>
-								<li class="social__item">
-									<a class="social__item-link social__item-link_instagram" href="https://www.instagram.com" title=""></a>
-								</li>
-							</ul>
-						</nav>
-						<!--_____________________Social-End_____________________ -->
+					<div class="header__item header__item_sidebar-btn">	
+						<a id="side-button" class="side-button side-button_sidebar" href="#sidebar">
+						</a>	
 					</div>
-					
-					<div class="btn-group">
-						<!--__________________Shop-bag___________________ -->
-						<a id="shop-bag" class="side-button side-button_right-btn_width header__item">
-							<span class="side-button__icon side-button__icon_basket glyphicon my-cart-icon">
+					<div class="header__item header__item_logo">
+						<span class="logo">portpro</span>
+					</div>
+					<div class="header__item-navs">
+						<div id="nav-wrapper" class="header__item header__item_nav">
+							<nav id="nav" class="nav">
+								<a class="nav__item" href="#" title="">men</a>
+								<a class="nav__item" href="#" title="">women</a>
+								<a class="nav__item" href="#" title="">kids</a>
+								<a class="nav__item" href="#" title="">sports</a>
+								<a class="nav__item" href="#" title="">brands</a>
+								<a class="nav__item" href="#" title="">customize</a>
+							</nav>							
+						</div>
+						<div class="header__item header__item_social">
+							<nav id="social" class="social">
+								<a class="social__item social__item_facebook" href="https://www.facebook.com" title=""></a>
+								<a class="social__item social__item_twitter" href="https://twitter.com" title=""></a>
+								<a class="social__item social__item_google-plus" href="https://plus.google.com" title=""></a>
+								<a class="social__item social__item_instagram" href="https://www.instagram.com" title=""></a>
+							</nav>						
+						</div>
+					</div>
+					<div class="header__item-buttons">
+						<div id="shop-bag" class="header__item header__item_basket">
+							<a class="side-button side-button_basket">
 								<span class="badge badge-notify my-cart-badge"></span>
-							</span>
-						</a>
-						<!--__________________Shop-bag___________________ -->
-
-						<!--__________________Searchbar___________________ -->
-						<form id="searchbar" class="searchbar side-button side-button_right-btn_width header__item">
-							<input id="search-input" class="searchbar__input searchbar_hidden" type="text" name="" placeholder="Search...">
-							<a id="search-link" class="searchbar__link">
-								<span class="side-button__icon side-button__icon_search"></span>
-							</a>							
-						</form>
-						<!--__________________Searchbar-End___________________ -->
+							</a>						
+						</div>
+						<div class="header__item header__item_search">
+							<form id="searchbar" class="searchbar">
+								<input id="search-input" class="searchbar__input searchbar_hidden" type="text" name="" placeholder="Search...">
+								<a id="search-link" class="side-button side-button_search">
+								</a>							
+							</form>
+						</div>
 					</div>			
 				</header>
-
 				<div class="container">
-					<div class="title-group">
-						<div class="top-section__text-group">
+					<div class="top-section__item-wrapper">
+						<div class="top-section__item">
 							<h1 class="top-section__title">nike<br>shoes</h1>
 							<p class="top-section__text">sign up now and get 50% off</p>
-							<a class="shop-btn top-section__item" href="#" title="">shop now</a>							
+							<a class="shop-btn top-section__item shop-btn_big" href="#" title="">shop now</a>							
 						</div>						
 					</div>
 				</div>
 			</div>
-
 			<div class="main-wrap">
 				<div class="container">
 					<main class = "main">
 						<div class="shipping">
-							<span class="shipping__icon">
-								<i class="fas fa-plane"></i>
-							</span>
-							<h4 class="shipping__title">free shipping</h4>
-							<p class="shipping__text">
-								Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry's 
-							</p>
-							<a class="shipping__link">click here</a>
+							<div class="shipping__item">
+								<span class="shipping__icon">
+									<i class="fas fa-plane"></i>
+								</span>
+								<h4 class="shipping__title">free shipping</h4>
+								<p class="shipping__text">
+									Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry's 
+								</p>
+								<a class="shipping__link">click here</a>
+							</div>
+							<div class="shipping__item">
+								<span class="shipping__icon">
+									<i class="fas fa-car-side"></i>
+								</span>
+								<h4 class="shipping__title">free shipping</h4>
+								<p class="shipping__text">
+									Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry's 
+								</p>
+								<a class="shipping__link">click here</a>
+							</div>
+							<div class="shipping__item">
+								<span class="shipping__icon">
+									<i class="fas fa-ship"></i>
+								</span>
+								<h4 class="shipping__title">free shipping</h4>
+								<p class="shipping__text">
+									Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry's 
+								</p>
+								<a class="shipping__link">click here</a>
+							</div>
+							<div class="shipping__item">
+								<span class="shipping__icon">
+									<i class="fas fa-train"></i>
+								</span>
+								<h4 class="shipping__title">free shipping</h4>
+								<p class="shipping__text">
+									Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry's 
+								</p>
+								<a class="shipping__link">click here</a>
+							</div>							
 						</div>
-						<div class="shipping">
-							<span class="shipping__icon">
-								<i class="fas fa-car-side"></i>
-							</span>
-							<h4 class="shipping__title">free shipping</h4>
-							<p class="shipping__text">
-								Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry's 
-							</p>
-							<a class="shipping__link">click here</a>
+						<div class="action">
+							<div class="action__item action__item_offer">
+								<div class="offer">
+									<span class="offer__term">offer of the month</span>
+									<h3 class="offer__title">phantom vision elite dynamic</h3>
+									<p class="offer__text">
+										Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry's Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry's 
+									</p>
+									<div class="offer__price">
+										<div class="price">
+											<span class="price__new price__new_size-big">$500</span>
+											<span class="price__old price__old_size-small">$1000</span>
+										</div>								
+									</div>
+									<div class="offer__timer">
+										<div id="timer" class="timer">
+										  	<div id="timer__hours" class="timer__item"></div>
+										  	<div id="timer__minutes" class="timer__item"></div>
+										  	<div id="timer__seconds" class="timer__item"></div>
+										</div>								
+									</div>
+									<div class="offer__shop-btn">
+										<a class="shop-btn shop-btn_small" href="#" title="">shop now</a>				
+									</div>
+								</div>
+							</div>
+							<div class="action__item action__item_image">
+								<img src="img/action__image.png" alt="">
+							</div>
 						</div>
-						<div class="shipping">
-							<span class="shipping__icon">
-								<i class="fas fa-ship"></i>
-							</span>
-							<h4 class="shipping__title">free shipping</h4>
-							<p class="shipping__text">
-								Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry's 
-							</p>
-							<a class="shipping__link">click here</a>
+						<div class="models">
+							<div class="models__item">
+								<div class="model">
+									<div class="model__img">
+										<img src="img/model__img-1.png"></img>
+									</div>
+									<div class="model__text">
+										<h5 class="model__name">stefan janoski max</h5>
+										<div class="model__price">
+											<div class="price">
+												<span class="price__new model__price_new">$500</span>
+												<span class="price__old model__price_old">$1000</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="models__item">
+								<div class="model">
+									<div class="model__img">
+										<img src="img/model__img-2.png"></img>
+									</div>
+									<div class="model__text">
+										<h5 class="model__name">vandal high supreme</h5>
+										<div class="model__price">
+											<div class="price">
+												<span class="price__new model__price_new">$500</span>
+												<span class="price__old model__price_old">$1000</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="models__item">
+								<div class="model">
+									<div class="model__img">
+										<img src="img/model__img-3.png"></img>
+									</div>
+									<div class="model__text">
+										<h5 class="model__name">new zoom</h5>
+										<div class="model__price">
+											<div class="price">
+												<span class="price__new model__price_new">$500</span>
+												<span class="price__old model__price_old">$1000</span>
+											</div>
+										</div>
+									</div>	
+								</div>
+							</div>
+							<div class="models__item">
+								<div class="model">
+									<div class="model__img">
+										<img src="img/model__img-4.png"></img>
+									</div>
+									<div class="model__text">
+										<h5 class="model__name">fit shoes</h5>
+										<div class="model__price">
+											<div class="price">
+												<span class="price__new model__price_new">$500</span>
+												<span class="price__old model__price_old">$1000</span>
+											</div>
+										</div>
+									</div>	
+								</div>
+							</div>
 						</div>
-						<div class="shipping">
-							<span class="shipping__icon">
-								<i class="fas fa-train"></i>
-							</span>
-							<h4 class="shipping__title">free shipping</h4>
-							<p class="shipping__text">
-								Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry's 
-							</p>
-							<a class="shipping__link">click here</a>
+						<div class="ad">
+							<div class="ad__offer">
+								<h2 class="ad__offer-title">men's running shoes</h2>
+								<span class="ad__offer-text">sign up now and get 50% off</span>
+								<div class="ad__offer-btn">
+									<a class="shop-btn shop-btn_small" href="#" title="">click here</a>			
+								</div>
+							</div>
+							<div class="ad__model">
+								<div class="model">
+									<div class="model__img">
+										<img src="img/model__img-5.png"></img>
+									</div>
+									<div class="model__text">			
+										<h5 class="model__name">free shipping</h5>
+										<div class="model__price">
+											<div class="price">
+												<span class="price__new model__price_new">$500</span>
+												<span class="price__old model__price_old">$1000</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="ad__banner">
+								<div class="banner">
+									<h2 class="banner__title">run,<br> eat, sleep <br> and repeat</h2>
+									<div class="banner__btn">
+										<a class="shop-btn shop-btn_small shop-btn_maya_blue" href="#" title="">shop now</a>
+									</div>
+								</div>
+							</div>
 						</div>
-
-									
+						<div class="models">
+							<div class="models__item">
+								<div class="model">
+									<div class="model__img">
+										<img src="img/model__img-6.png"></img>
+									</div>
+									<div class="model__text">
+										<h5 class="model__name">apple watch</h5>
+										<div class="model__price">
+											<div class="price">
+												<span class="price__new model__price_new">$500</span>
+												<span class="price__old model__price_old">$1000</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="models__item">
+								<div class="model">
+									<div class="model__img">
+										<img src="img/model__img-7.png"></img>
+									</div>
+									<div class="model__text">
+										<h5 class="model__name">sports shoes</h5>
+										<div class="model__price">
+											<div class="price">
+												<span class="price__new model__price_new">$500</span>
+												<span class="price__old model__price_old">$1000</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="models__item">
+								<div class="model">
+									<div class="model__img">
+										<img src="img/model__img-4.png"></img>
+									</div>
+									<div class="model__text">
+										<h5 class="model__name">men shoes</h5>
+										<div class="model__price">
+											<div class="price">
+												<span class="price__new model__price_new">$500</span>
+												<span class="price__old model__price_old">$1000</span>
+											</div>
+										</div>
+									</div>	
+								</div>
+							</div>
+							<div class="models__item">
+								<div class="model">
+									<div class="model__img">
+										<img src="img/model__img-8.png"></img>
+									</div>
+									<div class="model__text">
+										<h5 class="model__name">girl shoe</h5>
+										<div class="model__price">
+											<div class="price">
+												<span class="price__new model__price_new">$500</span>
+												<span class="price__old model__price_old">$1000</span>
+											</div>
+										</div>
+									</div>	
+								</div>
+							</div>
+						</div>			
 					</main>						
 				</div>
 			</div>		
