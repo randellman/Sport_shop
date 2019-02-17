@@ -7,23 +7,22 @@ $model-old-price-color: #818181;
 
 	&__item {
 		border-bottom: $blocks-border;
-		padding: 50px 10px;
 	}
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
 	.models {
 		flex-flow: column nowrap;
 	}
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
 	.models {
 		flex-flow: row wrap;
 	}
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
+@media only screen and (min-width: 769px) and (max-width: 1199px) {
 	.models {
 
 		&__item {
@@ -40,7 +39,9 @@ $model-old-price-color: #818181;
 
 		&__item {
 			flex-basis: 25%;
-			border-right: $blocks-border;
+			&:not(:last-child) {
+				border-right: $blocks-border;
+			}
 		}
 	}
 }

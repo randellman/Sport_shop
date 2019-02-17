@@ -1,0 +1,54 @@
+@media only screen and (max-width: 1199px) {
+	.gallery {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.gallery {
+		display: flex;
+		flex-flow: row wrap;
+
+		&__item {
+			min-height: 375px;
+			flex-basis: 25%;
+			background: {
+				size: cover;
+				repeat: no-repeat;
+				position: center;
+			}
+
+			&_bg-1 {
+				background-image: url(../img/gallery__item-1.png);
+			}
+
+			&_bg-2 {
+				background-image: url(../img/gallery__item-2.png);
+			}
+
+			&_bg-3 {
+				background-image: url(../img/gallery__item-3.png);
+			}
+
+			&_bg-4 {
+				background-image: url(../img/gallery__item-4.png);
+			} 
+
+			&_bg-5 {
+				background-image: url(../img/gallery__item-5.png);
+			} 
+
+			&_bg-6 {
+				background-image: url(../img/gallery__item-6.png);
+			} 
+
+			&_bg-7 {
+				background-image: url(../img/gallery__item-7.png);
+			} 
+
+			&_bg-8 {
+				background-image: url(../img/gallery__item-8.png);
+			}   
+		}
+	}
+}

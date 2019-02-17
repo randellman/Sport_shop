@@ -29,8 +29,11 @@ $ad-bg-color: #232323;
 	}
 
 	&__model {
-		padding: 50px 10px;
 		border-bottom: $blocks-border;		
+	}
+
+	&__banner {
+		display: none;
 	}
 }
 
@@ -41,20 +44,12 @@ $ad-bg-color: #232323;
 		&__offer {
 			padding: 70px 20px 55px;
 		}
-
-		&__banner {
-			display: none;
-		}
 	}
 }
 
 @media only screen and (min-width: 768px) {
 	.ad {
-		flex-flow: row wrap;
-
-		&__banner {
-			text-align: left;
-		}	
+		flex-flow: row wrap;	
 	}	
 }			
 
@@ -81,10 +76,6 @@ $ad-bg-color: #232323;
 				border-right: $blocks-border;
 			}
 		}
-
-		&__banner {
-			flex-basis: 100%;		
-		} 
 	}
 }
 
@@ -100,7 +91,6 @@ $ad-bg-color: #232323;
 
 @media only screen and (min-width: 1200px) and (max-width: 1699px) {
 	.ad {
-		max-height: 366px;
 
 		&__offer {
 			padding: 25px 40px 25px;
@@ -129,6 +119,8 @@ $ad-bg-color: #232323;
 		}
 
 		&__banner {
+			display: block;
+			text-align: left;
 			flex-basis: 50%;
 		}
 	}
@@ -136,7 +128,6 @@ $ad-bg-color: #232323;
 
 @media only screen and (min-width: 1700px) {
 	.ad {
-		max-height: 442px;
 
 		&__offer {
 			padding: 70px 55px 55px;

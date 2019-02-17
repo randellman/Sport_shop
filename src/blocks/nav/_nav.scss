@@ -1,3 +1,5 @@
+$slicknav-menu-bg: #212121;
+
 .nav {
 	display: none;
 	margin: 0;
@@ -14,6 +16,7 @@
 	&_menu {
 		display: flex;
 		flex-direction: column;
+		position: relative;
 		background-color: inherit;
 		padding: 0;
 		width: 100%;
@@ -32,12 +35,13 @@
 	}
 
 	&_icon {
-		
+		display: none;
 	}
 
 	&_nav {
-		background-color: $header-bg;
+		background-color: $slicknav-menu-bg;
 		border-radius: 10px;
+		position: absolute;
 		.nav__item {
 			margin: 0;
 			padding: 10px 15px;
@@ -48,7 +52,17 @@
 	}
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
+	.slicknav {
+
+		&_nav {
+			top: 30px;
+    		left: calc(50% - 58px);
+		}
+	}
+}
+
+@media only screen and (min-width: 769px) {
 	.nav {
 		display: none;
 	}
@@ -60,11 +74,9 @@
 		}
 
 		&_nav {
-			position: absolute;
-    		top: $header-height + 5px;
+    		top: 55px;
     		left: calc(50% - 135px);
-    		background-color: rgb(33, 33, 33);
-    		width: 270px;
+    		min-width: 270px;
 		}
 	}	
 }
@@ -76,6 +88,7 @@
 
 	.nav {
 		display: inline-flex;
+		flex-wrap: nowrap;
 		flex-basis: 100%;
 		align-items: center;
 		justify-content: space-evenly; 

@@ -11,7 +11,7 @@ const imageminOptipng = require("imagemin-optipng");
 const imageminSvgo = require("imagemin-svgo");
 
 module.exports = {
-    optimization: {
+  optimization: {
     minimizer: [
       new UglifyJsPlugin({
         cache: true,
@@ -26,7 +26,7 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        exclude: /node_modules/,
+        exclude: "/node_modules/",
         use: {
           loader: "babel-loader",
           options: {
@@ -36,7 +36,6 @@ module.exports = {
           }
         }
       },
-
       {
         test: /\.html$/,
         use: [
