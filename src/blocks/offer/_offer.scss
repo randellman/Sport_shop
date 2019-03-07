@@ -1,7 +1,9 @@
+$offer-term-color: #616161;
+
 .offer {
 	
 	&__term {
-		color: #616161;
+		color: $offer-term-color;
 		font-family: "Poppins";
 		font-size: 20px;
 		font-weight: 600;
@@ -10,7 +12,7 @@
 
 	&__title {
 		padding: 35px 0 50px;
-		color: #0d2e57;
+		color: $blue-title-color;
 		font-family: "Oswald";
 		font-weight: 400;
 		line-height: 44px;
@@ -18,7 +20,7 @@
 	}
 
 	&__text {
-		color: #8a8a8a;
+		color: $grey-text-color;
 		font-size: 18px;
 		font-weight: 300;
 		line-height: 30px;

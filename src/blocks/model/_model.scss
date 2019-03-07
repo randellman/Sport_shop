@@ -1,9 +1,19 @@
+$model-old-price-color: #818181;
+$model-img-md-h: 225px;
+$model-img-lg-h: 295px;
+$model-img-xl-h: 170px;
+$model-img-xxl-h: 246px;
+
 .model {
 	padding: 50px 10px;
+
+	&__link {
+		display: block;
+	}
 	
 	&__name {
 		padding-bottom: 15px;
-		color: $model-name-color;
+		color: $blue-title-color;
 		font-family: "Oswald";
 		font-weight: 400;
 		text-transform: uppercase;
@@ -14,7 +24,7 @@
 		
 		&_new {
 			padding-right: 10px;
-			color: $model-new-price-color;
+			color: $blue-text-color;
 			font-size: 15px;
 		}
 
@@ -33,7 +43,7 @@
 	.model {
 
 		&__img {
-			height: 225px;
+			height: $model-img-md-h;
 		}
 	}
 }
@@ -52,7 +62,7 @@
 	.model {
 
 		&__img {
-			height: 295px;
+			height: $model-img-lg-h;
 		}
 	}
 }
@@ -61,7 +71,7 @@
 	.model {
 
 		&__img {
-			height: 170px;
+			height: $model-img-xl-h;
 		}
 	}
 }
@@ -79,7 +89,7 @@
 		}
 
 		&__img {
-			height: 246px;
+			height: $model-img-xxl-h;
 		}
 	}
 }

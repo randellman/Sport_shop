@@ -1,14 +1,13 @@
+$action-item-xxl-w: 50%;
+$action-item-offer-col: #f2f0f0;
+
 .action {
 	display: flex;
 
 	&__item {
 
 		&_offer {
-			background-color: #f2f0f0;
-		}
-
-		&_image {
-			display: none;
+			background-color: $action-item-offer-col;
 		}
 	}
 }
@@ -65,13 +64,13 @@
 		&__item {
 			
 			&_offer {
-				flex-basis: 50%;
+				flex-basis: $action-item-xxl-w;
 				padding: 70px 120px 30px;
 			}
 
 			&_image {
 				display: block;
-				flex-basis: 50%;
+				flex-basis: $action-item-xxl-w;
 			}
 		}
 	}

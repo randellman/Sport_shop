@@ -1,22 +1,24 @@
+$main-shadow: rgba(12, 12, 12, 0.13);
+
 .main {
-    z-index: 10;
     position: relative;
+    z-index: 10;
     margin-top: -75px;
-    box-shadow: 0 0 62px rgba(12, 12, 12, 0.13);
+    box-shadow: 0 0 62px $main-shadow;
     background-color: $white-color;
 
     &__link {
-    	padding: 40px 0;
-        border-bottom: $blocks-border;
+        color: $link-color;
+        font-weight: 600;
+        text-transform: uppercase;
 
-    	&-text {
-    		color: #3753da;
-			font-weight: 600;
-			text-transform: uppercase;
+        &:hover {
+            color: inherit;
+        }
 
-            &:hover {
-                color: inherit;
-            }
+    	&-wrap {
+    		padding: 40px 0;
+            border-bottom: $blocks-border;
     	}
     }
 }

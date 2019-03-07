@@ -21,7 +21,6 @@ $shipping-icon-color: #5b5b5b;
 		color: $blue-title-color;
 		font-family: "Oswald";
 		font-weight: 500;
-		line-height: 33px;
 		text-transform: uppercase;
 	}
 
@@ -34,7 +33,7 @@ $shipping-icon-color: #5b5b5b;
 
 	&__link {
 		display: inline-block;
-		color: $blue-text-color !important;
+		color: $link-color !important;
 		font-weight: 600;
 		line-height: 26px;
 		&:first-letter {

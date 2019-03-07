@@ -1,3 +1,3 @@
 import "./blocks/blocks.js";
-import "./app.scss";
+import "./main.scss";
 import "./libs/libs.js";
